@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>javascript unscramble game</title>
+    <link rel="stylesheet" type="text/css" href="" />
+	<script type="text/javascript" src="fourArray.js"></script>
+    <script type="text/javascript">
+	
+		var originalWord;
+		var scrambleWord;
+	
+		function start() {
+			originalWord = getWord();
+			scrambleWord = scramble(originalWord);
+			//console.log(originalWord + "  " + scrambleWord);  //..for debugging  
+		} // start
+	
+		function scramble(word){
+			//console.log(word);
+			var arr = word.split(""); //..creates an array of letters from word
+			//console.log(arr);
+			var backWord = "";
+			while(arr.length) {
+				var n = Math.floor(Math.random() * arr.length);
+				backWord += arr[n];
+				arr.splice(n, 1);
+			} // while
+			return backWord;
+		} // scramble
+		
+		function getWord(){	
+			return four_array[getRandom(0, four_array.length-1)];		//..grab a word from the array
+		} // getWord
+	
+		//..function to generate a random integer between minimum and maximum, inclusively
+		function getRandom(minimum, maximum) {
+			return Math.floor(Math.random()*(maximum-minimum+1)+minimum);
+		} // getRandom
+	
+	</script>
+
+</head>
+
+<body onload="start()">
+
+<form>
+	<input type="button" value="new game" onclick="newgame()" />
+</form>
+<hr />
+<form>
+	Guess:<input type="text" /><input type="button" value="check" />
+</form>
+
+<ul>
+	<li id="mixUp">Unscramble: wwww</li>
+    <li id="remaining">Remaining Tries: 4</li>
+    <li id="progress">Keep Trying! You win!! You lost, the word was: wwww.</li>
+</ul>
+
+</body>
+</html>

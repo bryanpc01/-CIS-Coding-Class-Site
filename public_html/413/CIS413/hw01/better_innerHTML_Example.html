@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Better innerHTML Example</title>
+	
+	<script type="text/javascript" >
+    
+		var counter = 0;  //.. a script level variable seen by code in all script-tags and functions
+    
+		//..function increments the global counter and writes the new value to the p-tag
+		function incrementCount() {
+			
+			var localString;	//..a variable scoped local to the function because of the use of var inside the function
+			counter++;
+			localString = "Counter value = " + counter.toString();
+			document.getElementById("outTag").innerHTML = localString;
+			
+		} // incrementCount
+    
+    </script>
+    
+</head>
+<body>
+
+    <form>
+    	<input type="button" onclick="incrementCount()" value="increment counter" />
+    </form>
+    
+    <p id="outTag">Counter value = 0 </p>
+    
+</body>
+</html>

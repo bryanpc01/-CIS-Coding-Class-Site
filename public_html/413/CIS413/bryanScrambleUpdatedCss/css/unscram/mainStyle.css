@@ -1,0 +1,58 @@
+ body{
+    background-color: #C0C0C0;
+    padding: 10px;
+    margin: 35 auto;
+}
+
+/* score tally syle */
+.scoreTally {
+    background-color: coral;
+    border: outset beige;
+    color: black;
+    
+    margin: 5px;
+}
+
+.scoreCounter{
+    color: #C0C0C0;
+}
+
+/* score tally end */
+
+/* score button */
+#btnNewGame , #btnReset{
+    
+    background-color: transparent;
+    border: outset;
+}
+
+/* score button end */
+
+/* input style */
+.inputStyle {
+    
+    padding: 10px;
+    border: solid 5px #c0c0c0;
+    transition: border 0.3s;
+    
+}       
+
+.inputButton {
+    
+    border: solid 5px coral;
+    transition: border 0.3s;
+    background-color: transparent;
+}
+
+
+.usedWordsStyle {
+    color: black;
+    font-family: fantasy;
+    text-shadow: 4px -2px 13px;
+    letter-spacing: 5pt;
+    line-height: 3;
+    text-align: center;
+    font-size: 1em;
+    word-spacing: 7pt;
+    border: 5px solid coral;
+}
