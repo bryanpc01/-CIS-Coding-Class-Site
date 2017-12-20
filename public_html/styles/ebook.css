@@ -1,0 +1,20 @@
+@charset "utf-8";
+/* CSS Document */
+.center{
+	text-align: center;	
+}
+
+.figcenter img{
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+.figleft  img{
+	float: left; clear: both; margin-left: 0; margin-bottom: 1em; margin-top:
+    1em; margin-right: 1em; padding: 0;
+}
+
+p{
+	font-size: 20px;
+}

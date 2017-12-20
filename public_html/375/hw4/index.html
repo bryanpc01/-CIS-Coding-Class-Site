@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<meta name="description" content="The Department of Computer Information Systems at Buffalo
+State College provides a four year undergraduate degree program in information technology,
+systems administration, network administration, internet programming, database programming,
+and project management." />
+
+
+<meta name="keywords" content="buffalo state college, computer information systems, cis,
+buffalo, undergraduate, IT, college, SUNY, State University of New York, information technology,
+375, internet programming, html5, css, javascript, dom scripting." />
+
+<title>HomeWork 4: PB</title>
+<link href="../../styles/cis.css" rel="stylesheet" type="text/css"><!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+	
+<style>
+		body {background-color: #213F56;}
+		#form { width: 500px;
+			margin: 25px auto;
+			padding 5px;
+			text-align: center;
+			color: #000;}
+		#correct {font-size: 25px; font-weight: bold;}
+        #prompt { width: 600px;
+			margin: 25px auto;
+			padding 15px;
+			text-align: center;
+			color: #000;}
+        #countdownField {
+                padding: 25px;
+            color: navy;
+            font-size: 40px;
+            
+        }
+</style>
+
+</head>
+
+<body>
+<!-- Phillip Bryan -->
+<div class="container">
+  <header>
+    <a href="../index.html">
+    <img src="../../images/philLogo.png" alt="Site Logo" width="180" height="90" id="logo" style="background-color: #C6D580; display:block;" />
+    </a>
+  </header>
+  <div class="sidebar1">
+    <ul class="nav">
+	  <li><a href="../index.html">375 CourseWork</a></li>
+      
+    </ul>
+    <aside>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+    </aside>
+  <!-- end .sidebar1 --></div>
+  <article class="content">
+  
+<header>    
+    <h2>CIS-375 Homework Assignment Four</h2>
+</header>    
+    
+    <!--  Phillip Bryan  -->
+    
+<!--  Prompt to the user  -->
+    <div id="prompt">    
+        <h1>Multiplication Blitz</h1>
+            <p>This is an exciting game that is meant to test a group of student's speed at solving multiplication problems.</p>
+
+        <h3>Rules of the Game</h3>
+            <p>
+                The members of each team take turns rotating through the random multiplication problems provided.<br />
+                Members rotate after every correct answer.<br />
+                After ten correct answers, the team's score will be displayed.<br />
+            </p>
+    </div>
+    
+<!--  Layout for Questions   -->
+    <div id="form" ><form action="javascript:void(0);">
+		<span id="correct">&nbsp;</span><br /><!--Space for Greeting-->
+        <span id="countdownField">&nbsp;</span><br/>	
+		<span id="question9.22">Question 9.22: &nbsp;</span><!--Space for problem-->
+		<input id="answerField" type="number" placeholder="Enter Answer Here:" autofocus/> &nbsp;<!--Space for answer-->
+		<input id="checkButton" type="submit" value="Check Answer" /> <br /><!--Space for event button--> 
+	</form></div>
+
+
+    
+    <!-- end .content -->
+    </article>
+  
+  
+  <footer>
+	<h3>Phillip Bryan: Fall 2014</h3>
+  </footer>
+  <!-- end .container --></div>
+ <script src="../../js/hw4.js">
+</script>
+</body>
+</html>
