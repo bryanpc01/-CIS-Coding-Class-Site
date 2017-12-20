@@ -1,0 +1,22 @@
+body, html {
+    background-color: #C0C0C0;
+    height: 100%;
+}
+
+img {
+    display: inline;
+}
+
+.ball {
+    max-width: 5%;
+    display: inline;
+}
+
+.selectBall{
+    height: 100%;
+    display: inline;
+}
+
+.here {
+    border: 4px dotted black;
+}
